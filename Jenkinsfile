@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                echo 'hello'
-                bat 'git branch'
+                echo 'hello from master-2 branch'
+                bat 'git rev-parse --abbrev-ref HEAD'
 
                 script {
                     echo 'testing.  ..'
