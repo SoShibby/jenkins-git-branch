@@ -7,6 +7,8 @@ pipeline {
                 script {
                     echo 'testing.  ..'
 
+                    git branch
+
                     try {
                         echo scm.branches[0].name
                     } catch(Exception e) {
