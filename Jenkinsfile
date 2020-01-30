@@ -4,10 +4,12 @@ pipeline {
     stages {
         stage('test') {
             steps {
+                git branch
+                
                 script {
                     echo 'testing.  ..'
 
-                    git branch
+                    
 
                     try {
                         echo scm.branches[0].name
