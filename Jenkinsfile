@@ -5,7 +5,7 @@ pipeline {
         stage('test') {
             steps {
                 echo 'hello from master-2 branch.'
-                echo env.BRANCH_NAME
+                echo env.BRANCH
                 bat 'git rev-parse --abbrev-ref HEAD'
 
                 script {
