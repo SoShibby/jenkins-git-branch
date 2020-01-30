@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                bat 'SET'
-                bat 'git rev-parse --abbrev-ref HEAD'
+                echo "Branch Name: ${GIT_LOCAL_BRANCH}"
             }
         }
     }
