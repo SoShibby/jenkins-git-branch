@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                git branch
-                
+                sh 'git branch'
+
                 script {
                     echo 'testing.  ..'
 
